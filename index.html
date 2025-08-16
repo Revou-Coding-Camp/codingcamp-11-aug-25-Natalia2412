@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AnrianiTech — Empowering Digital Future</title>
+  <meta name="description" content="Anrianitech: company profile, vision & mission, and contact form to reach our team." />
+  <meta property="og:title" content="Anrianitech — Company Profile" />
+  <meta property="og:description" content="Learn about Anrianitech and send us a message via our secure form." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="https://img.freepik.com/premium-vector/vector-image-business-woman-shirt-suit_1213699-3044.jpg" alt="Profile" class="profile-icon">
+        <span>AnrianiTech</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Our Profile</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="index.html#message-us">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <section class="hero" role="banner" aria-label="Company banner">
+    <div class="hero-overlay">
+      <h1 id="greeting" class="hero-title">Hi Guest, Welcome To Website</h1>
+      <p class="hero-subtitle">We build reliable software that scales with your ambitions.</p>
+    </div>
+  </section>
+  
+
+  <section class="section">
+    <div class="container grid-2">
+      <img class="about-image" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1400&auto=format&fit=crop" alt="Team collaboration at Anrianitech" loading="lazy">
+      <div>
+        <h2>About AnrianiTech</h2>
+        <p>
+          AnrianiTech adalah perusahaan rekayasa perangkat lunak yang berfokus pada produk
+          berbasis cloud, data intelligence, dan pengalaman pengguna modern. Kami menggabungkan
+          praktik engineering terbaik dengan riset UX untuk menghadirkan solusi yang aman,
+          cepat, dan mudah dipelihara.
+        </p>
+        <a class="link" href="profile.html">Baca selengkapnya di Our Profile →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section headquarter-section">
+    <h2>Our Headquarters</h2>
+    <p class="center">Connecting you with our teams across Indonesia.</p>
+    <div class="cities-container">
+      <div class="city">
+        <div class="circle">🇮🇩</div>
+        <h3>Jakarta</h3>
+        <p>Pusat inovasi dan kolaborasi AnrianiTech.</p>
+      </div>
+      <div class="city">
+        <div class="circle">🚀</div>
+        <h3>Bandung</h3>
+        <p>Rumah bagi talenta teknologi kreatif kami.</p>
+      </div>
+      <div class="city">
+        <div class="circle">🌊</div>
+        <h3>Surabaya</h3>
+        <p>Menjangkau solusi digital untuk Indonesia Timur.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="message-us" class="message-section">
+    <h2>Message Us</h2>
+    <div class="message-grid">
+      <div class="form-col">
+        <form id="contact-form" class="form">
+          <div class="form-row">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" required>
+            <div class="error" id="nama-error"></div>
+          </div>
+          <div class="form-row">
+            <label for="tanggal-lahir">Tanggal Lahir</label>
+            <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+            <div class="error" id="tanggal-lahir-error"></div>
+          </div>
+          <div class="form-row">
+            <label>Jenis Kelamin</label>
+            <div class="radio-group">
+              <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-Laki" required>
+              <label for="laki-laki">Laki-Laki</label>
+              <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan" required>
+              <label for="perempuan">Perempuan</label>
+            </div>
+            <div class="error" id="jenis-kelamin-error"></div>
+          </div>
+          <div class="form-row">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+            <div class="error" id="pesan-error"></div>
+          </div>
+          <div class="form-actions">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="result-col">
+        <div class="result">
+          <h3>Submitted Data</h3>
+          <p>Current time : <span id="current-time"></span></p>
+          <hr>
+          <div class="submitted-info">
+            <p>Nama: <span id="display-nama"></span></p>
+            <p>Tanggal Lahir: <span id="display-tanggal-lahir"></span></p>
+            <p>Jenis Kelamin: <span id="display-jenis-kelamin"></span></p>
+            <p>Pesan: <span id="display-pesan"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> AnrianiTech. All rights reserved.</p>
+    </div>
+</footer>
+
+  <script src="JS/script.js" defer></script>
+</body>
+</html>
